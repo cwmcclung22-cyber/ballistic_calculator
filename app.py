@@ -19,7 +19,7 @@ def calculate_drops():
     units = str(data.get('units', 'MOA')).upper()
     
     # Determine angular unit based on the optic
-    if units == 'MIL':
+    if units == 'MIL' or units == 'MRAD':
         angular_unit = Angular.Mil
     else:
         angular_unit = Angular.MOA
